@@ -17,16 +17,17 @@ This is a collection of projects and exercises from my 7th semester university c
 
 ## 📁 Projects Structure
 
-### Current Projects:
+### Current Topics:
 
-#### 🔹 [CodeFirstApproach](./CodeFirstApproach/)
-- **Description**: Implementation of Entity Framework Code First approach
-- **Technologies**: ASP.NET Core MVC, EF Core, SQL Server
-- **Key Features**:
-  - Database creation through code
-  - Student entity model
-  - Migration management
-  - CRUD operations
+#### 🔹 [Entity Framework Core](./EntityFrameworkCore/)
+Complete EF Core learning path with organized subtopics:
+- **01-CodeFirst**: Code First approach implementation
+- **02-DatabaseFirst**: Database First approach
+- **03-Relationships**: One-to-One, One-to-Many, Many-to-Many
+- **04-AdvancedQueries**: Complex LINQ queries
+- **05-Performance**: Optimization techniques
+
+Har topic mein detailed notes aur working examples hain.
 
 ## 🛠️ Technologies Used
 
@@ -75,11 +76,14 @@ This repository serves as my practical learning companion during my 7th semester
 ## 📈 Learning Progress
 
 - ✅ Basic ASP.NET Core MVC setup
-- ✅ Entity Framework Code First approach
-- ✅ Database migrations
-- 🔄 Authentication & Authorization (In Progress)
+- 🔄 Entity Framework Core (In Progress)
+  - ✅ Code First approach
+  - ✅ Migrations & DbContext
+  - 🔄 Relationships
+  - ⏳ Advanced Queries
+  - ⏳ Performance Optimization
+- ⏳ Authentication & Authorization (Upcoming)
 - ⏳ RESTful API development (Upcoming)
-- ⏳ Advanced EF Core features (Upcoming)
 
 ## 🤝 Contributing
 
