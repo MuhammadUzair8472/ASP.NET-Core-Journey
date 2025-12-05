@@ -98,6 +98,20 @@ public class SchoolContext : DbContext
 3. Data annotations aur Fluent API ko mix karo smartly
 4. Migrations ko version control mein include karo
 
+## 📂 Projects in this Folder
+
+### 1. CodeFirstApproach
+Basic Code First implementation with Student entity.
+
+### 2. StudentManagement-CRUD
+Complete CRUD operations implementation:
+- ✅ Create - Student add karna
+- ✅ Read - Students list view karna
+- ✅ Update - Student information edit karna
+- ✅ Delete - Student remove karna
+
+Detailed README is project folder mein hai!
+
 ## Next Steps
 
 - Fluent API seekho (more flexible than Data Annotations)
