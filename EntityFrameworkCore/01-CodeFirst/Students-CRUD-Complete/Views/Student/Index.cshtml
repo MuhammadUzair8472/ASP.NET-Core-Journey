@@ -1,0 +1,52 @@
+﻿@model IEnumerable<students_crud.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1> List Of Record</h1>
+
+
+<table class="table table-bordered table-striped table-hover    " >
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.studentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.studentEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.studentGender)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studentGender)
+            </td>
+            <td>
+                    <a asp-action="Edit"
+                       asp-route-id="@item.studentId"
+                       class="btn btn-warning">
+                        Edit
+                    </a>
+               @*  <a asp-action="Edit" asp-route-id="@item.studentId class=" btn btn-primary">Edit</a> | *@
+                    
+                    <a asp-action="Delete" asp-route-id="@item.studentId" class="btn btn-danger ">Delete</a> |
+                    <a asp-action="Create" asp-route-id="@item.studentId" class="btn btn-primary">Create New</a>
+                   
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

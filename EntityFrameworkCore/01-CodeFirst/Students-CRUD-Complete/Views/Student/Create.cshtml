@@ -1,0 +1,93 @@
+﻿ @model students_crud.Models.Student
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Add New Record</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="studentName" class="control-label"></label>
+                <input asp-for="studentName" class="form-control" /> 
+                <span asp-validation-for="studentName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="studentEmail" class="control-label"></label>
+                <input asp-for="studentEmail" class="form-control" />
+                <span asp-validation-for="studentEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="studentGender" class="control-label"></label>
+                <input asp-for="studentGender" class="form-control" />
+                <span asp-validation-for="studentGender" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+ 
+
+@* @model students_crud.Models.Student
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center">Create</h1>
+
+
+
+<!-- Centering the form -->
+<div class="d-flex justify-content-center">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="studentName" class="control-label"></label>
+                <input asp-for="studentName" class="form-control" />
+                <span asp-validation-for="studentName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="studentEmail" class="control-label"></label>
+                <input asp-for="studentEmail" class="form-control" />
+                <span asp-validation-for="studentEmail" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="studentGender" class="control-label"></label>
+                <input asp-for="studentGender" class="form-control" />
+                <span asp-validation-for="studentGender" class="text-danger"></span>
+            </div>
+
+            <div class="form-group text-center">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+ *@
